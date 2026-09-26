@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malhar Kadam Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        background: #0f1419;
+        color: white;
+      }
+      .section-title {
+        font-weight: 700;
+      }
+      .hero {
+        padding: 120px 0;
+      }
+      .card {
+        background: #1a1f2e;
+        border: 1px solid #2d333f;
+      }
+      .navbar {
+        border-bottom: 1px solid #2d333f;
+      }
+      footer {
+        border-top: 1px solid #2d333f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background: #0f1419"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Malhar</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero text-center">
+      <div class="container">
+        <h4 class="text-info">Hi, I'm</h4>
+        <h1 class="display-3 fw-bold">Malhar Kadam</h1>
+        <h4 class="text-warning">Full Stack Developer & Designer</h4>
+        <p class="lead text-secondary w-75 mx-auto">
+          I build modern, responsive and beautiful websites with performance and
+          great UI.
+        </p>
+
+        <div class="mt-4">
+          <a href="#projects" class="btn btn-info fw-bold px-4">View My Work</a>
+          <a href="#contact" class="btn btn-outline-light fw-bold px-4 ms-2"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5 bg-dark">
+      <div class="container">
+        <h2 class="section-title text-center mb-3">About Me</h2>
+        <p class="text-center text-secondary mb-4">Who I Am</p>
+
+        <div
+          class="row align-items-right justify-items-right"
+          style="display: flex; justify-items: right"
+        >
+          <div
+            class="col-md-4 text-center"
+            style="border: 2px solid white;border-radius: 50%; background-color: white; height: 395px;"
+          >
+            <img
+              src="https://res.cloudinary.com/dhc7gkyi8/image/upload/v1759646937/Malhar_Kadam_lqbvdu.webp"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+
+          <div class="col-md-8">
+            <p class="text-secondary fs-5" style="width: 700px">
+              I am a third-year Computer Engineering student driven by curiosity
+              and a passion for technology. I’m interested in software
+              development, AI/ML, and system design, and I love working on
+              projects that challenge my thinking. My goal is to grow as a
+              developer, contribute to impactful work, and build a strong career
+              in tech.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="text-secondary">Technologies I Use</p>
+
+        <div class="row g-4 mt-2">
+          <div class="col-6 col-md-3">
+            <div class="card p-3 text-center">
+              <i class="bi bi-code-slash fs-1 text-info"></i>
+              <h5 class="mt-2">JavaScript</h5>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card p-3">
+              <i class="bi bi-python fs-1 text-info"></i>
+              <h5 class="mt-2">Python</h5>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card p-3">
+              <i class="bi bi-bootstrap fs-1 text-info"></i>
+              <h5 class="mt-2">Bootstrap</h5>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card p-3">
+              <i class="bi bi-database fs-1 text-info"></i>
+              <h5 class="mt-2">MongoDB</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <p class="text-secondary text-center">My Recent Work</p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h4>E-Commerce Website</h4>
+                <p class="text-secondary">
+                  Responsive store with cart & payments.
+                </p>
+
+                <span class="badge bg-info">React</span>
+                <span class="badge bg-info">Node</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://amazingmarvin.com/static/Amazing_Marvin_customizable_todo_app.9742a937.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4>Task Manager</h4>
+                <p class="text-secondary">Team collaboration + analytics.</p>
+                <span class="badge bg-info">Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://www.shutterstock.com/image-vector/clear-forecast-display-sun-cloud-600nw-
+2621195541.jpg"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h4>Weather App</h4>
+                <p class="text-secondary">Live weather and forecast UI.</p>
+                <span class="badge bg-info">API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-secondary text-center">Let's Work Together</p>
+
+        <form class="w-50 mx-auto">
+          <input class="form-control mb-3" placeholder="Your Name" />
+          <input class="form-control mb-3" placeholder="Your Email" />
+          <textarea
+            class="form-control mb-3"
+            rows="4"
+            placeholder="Your Message"
+          ></textarea>
+          <div class="text-center">
+            <button class="btn btn-info px-4 fw-bold">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+      <div class="d-flex justify-content-center gap-3 mb-2">
+        <i class="bi bi-github fs-3"></i>
+        <i class="bi bi-linkedin fs-3"></i>
+        <i class="bi bi-instagram fs-3"></i>
+      </div>
+      <small class="text-secondary"
+        >© 2025 Malhar Kadam. All Rights Reserved.</small
+      >
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

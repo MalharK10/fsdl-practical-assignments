@@ -1,0 +1,426 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #222;
+}
+
+.nav-link {
+    color: #555;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #222;
+}
+
+.cart-link {
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://wallpaperaccess.com/full/320487.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: inherit;
+    margin-bottom: 30px;
+}
+
+/* Products Section */
+.products-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    margin: 0 5px;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.filter-btn.active {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Product Card */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.product-category {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #222;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.qty-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.qty-input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.qty-input:focus {
+    outline: none;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+    background-color: #444;
+}
+
+.add-to-cart-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #222;
+    box-shadow: 0 0 0 0.2rem rgba(34, 34, 34, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Cart Modal */
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.cart-item-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cart-item-price {
+    color: #666;
+}
+
+/* Cart Item Controls */
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.cart-qty-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #222;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.cart-qty-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.cart-qty-input {
+    width: 35px;
+    height: 28px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.cart-qty-input:focus {
+    outline: none;
+}
+
+.remove-item {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.remove-item:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* User Menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-menu span {
+    color: #222;
+    font-weight: 500;
+}
+
+/* Login Modal Styles */
+.modal-header {
+    background-color: #f9f9f9;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #222;
+}
+
+#loginForm .form-control,
+#signupForm .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 12px;
+}
+
+#loginForm .form-control:focus,
+#signupForm .form-control:focus {
+    border-color: #222;
+    box-shadow: 0 0 0 0.2rem rgba(34, 34, 34, 0.1);
+}
+
+#loginForm .btn-dark,
+#signupForm .btn-dark {
+    font-weight: 600;
+    padding: 10px;
+}
+
+.form-check-label {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.text-muted a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

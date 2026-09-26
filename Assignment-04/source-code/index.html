@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENSEX & NIFTY Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header-badge">LIVE MARKET</div>
+            <h1 class="header-title">Indian Market<br></h1>
+            <p class="header-subtitle">SENSEX & NIFTY 50 — Intraday Performance</p>
+            <div class="header-meta">
+            </div>
+        </header>
+
+        <div class="stats-grid">
+
+            <div class="stat-card" id="sensexCard">
+                <div class="stat-label">BSE SENSEX</div>
+                <div class="stat-value" id="sensexValue">—</div>
+                <div class="stat-change" id="sensexChange">—</div>
+                <div class="stat-range">
+                    <span>High: <strong id="sensexHigh">—</strong></span>
+                    <span>Low: <strong id="sensexLow">—</strong></span>
+                </div>
+            </div>
+
+            <div class="stat-card" id="niftyCard">
+                <div class="stat-label">NIFTY 50</div>
+                <div class="stat-value" id="niftyValue">—</div>
+                <div class="stat-change" id="niftyChange">—</div>
+                <div class="stat-range">
+                    <span>High: <strong id="niftyHigh">—</strong></span>
+                    <span>Low: <strong id="niftyLow">—</strong></span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>SENSEX Trend</h2>
+                    <div class="chart-pill sensex-pill">BSE</div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="sensexChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>NIFTY 50 Trend</h2>
+                    <div class="chart-pill nifty-pill">NSE</div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="niftyChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

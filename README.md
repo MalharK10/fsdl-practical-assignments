@@ -14,7 +14,7 @@ profile website.
 - Assignment 03
 - Assignment 04
 ## Hosted Website Link
-Live Website: add hosted link after deployment
+Live Website: https://malhark10.github.io/fsdl-practical-assignments/
 ## Repository Link
 GitHub Repository: https://github.com/MalharK10/fsdl-practical-assignments
 ## Technologies Used

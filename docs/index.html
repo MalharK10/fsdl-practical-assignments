@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Malhar Kadam — Full Stack Developer</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button class="explorer-toggle" id="explorerToggle" aria-label="Toggle file explorer">☰ EXPLORER</button>
+
+<div class="app">
+
+  <!-- SIDEBAR: file explorer -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">MALHARKADAM <span class="dim">— PORTFOLIO</span></div>
+    <nav class="tree">
+      <div class="tree-label">FSDL-PORTFOLIO</div>
+      <a href="#home" class="tree-item" data-target="home"><span class="ico">◆</span>home.md</a>
+      <a href="#about" class="tree-item" data-target="about"><span class="ico">◆</span>about.md</a>
+      <a href="#education" class="tree-item" data-target="education"><span class="ico">◆</span>education.md</a>
+      <div class="tree-folder">▾ experience/</div>
+      <a href="#experience" class="tree-item indent" data-target="experience"><span class="ico">◆</span>internships.js</a>
+      <div class="tree-folder">▾ projects/</div>
+      <a href="#projects" class="tree-item indent" data-target="projects"><span class="ico">◆</span>featured.jsx</a>
+      <a href="#skills" class="tree-item" data-target="skills"><span class="ico">◆</span>skills.json</a>
+      <a href="#certifications" class="tree-item" data-target="certifications"><span class="ico">◆</span>certifications.yml</a>
+      <a href="#assignments" class="tree-item" data-target="assignments"><span class="ico">◆</span>fsdl-assignments.md</a>
+      <a href="#contact" class="tree-item" data-target="contact"><span class="ico">◆</span>contact.sh</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="dot dot-green"></span> build passing
+    </div>
+  </aside>
+
+  <!-- MAIN EDITOR AREA -->
+  <main class="editor">
+
+    <div class="tabbar" id="tabbar">
+      <div class="tab active" data-tab="home">home.md</div>
+    </div>
+
+    <div class="pane">
+
+      <section id="home" class="view hero-view">
+        <div class="linegut" aria-hidden="true"></div>
+        <div class="hero">
+          <div class="avatar">MK</div>
+          <p class="kicker">// full stack developer &amp; CS undergrad</p>
+          <h1>Malhar Kadam</h1>
+          <p class="type-line"><span id="typeTarget"></span><span class="cursor">▌</span></p>
+          <p class="hero-loc">Pimpri Chinchwad, Pune, Maharashtra</p>
+          <div class="hero-links">
+            <a class="btn" href="mailto:malharkadam14023@gmail.com">mail --send</a>
+            <a class="btn ghost" href="tel:+919529781514">call +91-9529781514</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="view">
+        <h2><span class="tag">01</span> about.md</h2>
+        <div class="card">
+          <p>I'm a Computer Engineering student building across the MERN stack — from React
+          interfaces to Express/MySQL backends — and getting hands-on with AWS, Docker,
+          Terraform and Ansible along the way. I like taking a feature from a Figma frame
+          to a deployed, working product.</p>
+        </div>
+      </section>
+
+      <section id="education" class="view">
+        <h2><span class="tag">02</span> education.md</h2>
+        <div class="card edu-card">
+          <div class="edu-row">
+            <div>
+              <h3>Pimpri Chinchwad College of Engineering, Pune</h3>
+              <p class="dim">B.Tech in Computer Engineering</p>
+              <p class="small dim">Coursework: Data Structures, Algorithm Analysis, DBMS, AI, Web Technologies, OOP, Computer Networks</p>
+            </div>
+            <div class="edu-meta">
+              <span class="pill">2023 – 2027</span>
+              <span class="pill accent">CGPA 7.33 / 10</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="view">
+        <h2><span class="tag">03</span> internships.js</h2>
+
+        <div class="card exp-card">
+          <div class="exp-head">
+            <h3>Full Stack Developer Intern <span class="dim">— Remote</span></h3>
+            <span class="pill">Nov 2025 – Jan 2026</span>
+          </div>
+          <p class="company">A S Engitech INC</p>
+          <ul>
+            <li>Built responsive, cross-browser compatible web applications using ReactJS, JavaScript, HTML5, and CSS3.</li>
+            <li>Developed reusable frontend components with state management to improve code and UI consistency.</li>
+            <li>Translated Figma mockups into pixel-perfect, accessible interfaces in collaboration with the design team.</li>
+          </ul>
+        </div>
+
+        <div class="card exp-card">
+          <div class="exp-head">
+            <h3>Software Engineer Intern <span class="dim">— On-site</span></h3>
+            <span class="pill">Jul 2026 – Oct 2026</span>
+          </div>
+          <p class="company">CoReCo Technologies Pvt. Ltd., Pune</p>
+          <ul>
+            <li>Developed hands-on skills in MERN stack development, REST APIs, and backend application design.</li>
+            <li>Worked with MySQL, Sequelize, and Express.js for database management and scalable backend development.</li>
+            <li>Gained practical experience with AWS, Docker, Terraform, and Ansible for cloud deployment and automation.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="view">
+        <h2><span class="tag">04</span> featured.jsx</h2>
+
+        <div class="proj-grid">
+          <div class="card proj-card">
+            <p class="proj-stack">MERN Stack · Mar 2026</p>
+            <h3>Canteen Queue Management System</h3>
+            <p>Digital queue system to cut waiting time in college canteens, with real-time
+            order updates and queue tracking backed by AWS RDS.</p>
+            <ul class="tight">
+              <li>Real-time order updates and queue tracking via AWS RDS integration</li>
+              <li>Responsive ReactJS UI for customer and admin interaction</li>
+            </ul>
+          </div>
+
+          <div class="card proj-card">
+            <p class="proj-stack">Express.js · MongoDB · Feb 2026</p>
+            <h3>Placement Cell Dashboard</h3>
+            <p>Centralized dashboard for managing student placement records and company
+            recruitment data.</p>
+            <ul class="tight">
+              <li>RESTful APIs in Express.js for secure data management</li>
+              <li>Responsive frontend pages with full database integration</li>
+            </ul>
+          </div>
+
+          <div class="card proj-card">
+            <p class="proj-stack">Python · Scikit-learn · Dec 2024</p>
+            <h3>Bitcoin Price Prediction</h3>
+            <p>Machine learning model forecasting Bitcoin prices from historical market data.</p>
+            <ul class="tight">
+              <li>Regression, feature engineering, and preprocessing for accuracy</li>
+              <li>Trend and performance visualization with Pandas &amp; Matplotlib</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="view">
+        <h2><span class="tag">05</span> skills.json</h2>
+        <div class="card code-card">
+<pre><span class="p">{</span>
+  <span class="k">"languages"</span><span class="p">:</span> <span class="s">["Python", "Java", "C", "C++", "JavaScript", "HTML/CSS", "React.js"]</span><span class="p">,</span>
+  <span class="k">"databases"</span><span class="p">:</span> <span class="s">["SQL", "MongoDB"]</span><span class="p">,</span>
+  <span class="k">"frameworks_tools"</span><span class="p">:</span> <span class="s">["Express.js", "Node.js", "GitHub", "Linux", "VS Code"]</span><span class="p">,</span>
+  <span class="k">"libraries"</span><span class="p">:</span> <span class="s">["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn"]</span>
+<span class="p">}</span></pre>
+        </div>
+      </section>
+
+      <section id="certifications" class="view">
+        <h2><span class="tag">06</span> certifications.yml</h2>
+        <div class="card">
+          <ul class="cert-list">
+            <li><span class="cert-title">100 Days of Code™: The Complete Python Pro Bootcamp</span><span class="dim"> — Udemy</span></li>
+            <li><span class="cert-title">Machine Learning Specialization</span><span class="dim"> — Stanford University, Coursera</span></li>
+            <li><span class="cert-title">Financial Markets</span><span class="dim"> — Yale, Coursera</span></li>
+            <li><span class="cert-title">The Complete Cyber Security Course: Hackers Exposed!</span><span class="dim"> — Udemy</span></li>
+            <li><span class="cert-title">Java Masterclass: 130+ Hours of Expert Lessons</span><span class="dim"> — Udemy</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="assignments" class="view">
+        <h2><span class="tag">07</span> fsdl-assignments.md</h2>
+        <div class="card">
+          <p>All Full Stack Development Lab practical assignments — source code, screenshots,
+          and READMEs — are tracked in one public repository, alongside this site.</p>
+          <a class="btn" href="https://github.com/your-username/fsdl-practical-assignments" target="_blank" rel="noopener">
+            View GitHub Repository ↗
+          </a>
+          <p class="small dim" style="margin-top:10px;">
+            ↳ replace <code>your-username</code> above with your actual GitHub username once pushed.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="view">
+        <h2><span class="tag">08</span> contact.sh</h2>
+        <div class="card code-card">
+<pre>$ <span class="k">echo</span> $EMAIL
+malharkadam14023@gmail.com
+$ <span class="k">echo</span> $PHONE
++91-9529781514
+$ <span class="k">echo</span> $LOCATION
+Pimpri Chinchwad, Pune, Maharashtra</pre>
+        </div>
+        <div class="hero-links" style="margin-top:16px;">
+          <a class="btn" href="mailto:malharkadam14023@gmail.com">Send an email</a>
+          <a class="btn ghost" href="https://linkedin.com/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </section>
+
+      <footer class="footer">© 2026 Malhar Kadam. Built for the FSDL practical assignment.</footer>
+
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

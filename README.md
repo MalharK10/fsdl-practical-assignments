@@ -1,9 +1,9 @@
 # FSDL Practical Assignments
 ## Student Details
-Name: Your Name
-Roll No: Your Roll Number
-Class: Your Class
-Division: Your Division
+Name: Malhar Kadam
+Roll No: 123B1B155
+Class: Computer Engineering
+Division: C
 Subject: Full Stack Development Lab
 ## Repository Description
 This repository contains all previous FSDL practical assignments and a hosted personal
@@ -16,6 +16,6 @@ profile website.
 ## Hosted Website Link
 Live Website: add hosted link after deployment
 ## Repository Link
-GitHub Repository: add repository link here
+GitHub Repository: https://github.com/MalharK10/fsdl-practical-assignments
 ## Technologies Used
 Git, GitHub, HTML, CSS, JavaScript, GitHub Pages
